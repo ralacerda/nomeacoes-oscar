@@ -1,0 +1,18 @@
+---
+import movies from "@/data/movies.json"
+import Layout from "@/layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  return Object.entries(movies).map(([movie, data]) => {
+    return { params: {imdbID: movie}}
+  })
+}
+
+const { imdbID } = Astro.params
+const movie = movies[imdbID]
+---
+
+<div>{movie.title}</div>
+<img src={movie.poster}/>   
+<p> {movie.plot} </p>
+

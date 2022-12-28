@@ -1,0 +1,14 @@
+---
+import movies from "@/data/movies.json"
+import Layout from "@/layouts/Layout.astro";
+
+const allMovies = Object.keys(movies)
+---
+
+<!-- {allMovies} -->
+
+{allMovies.map(movie => {
+  return (
+    <div>{movie}</div>
+  )
+})}

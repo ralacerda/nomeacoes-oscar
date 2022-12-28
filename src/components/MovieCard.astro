@@ -1,0 +1,60 @@
+---
+import movies from "@/data/movies.json";
+
+export interface Props {
+	imdbID: string;
+}
+
+const { imdbID } = Astro.props;
+
+const movie = movies[imdbID];
+const translatedName = movie.title.toLowerCase() != movie.local_title.toLowerCase() ? true : false
+---
+
+<div class="card">
+  <img src={movie.poster} class="poster"/>
+  <div class="info">
+    <div>
+    <h2>{movie.local_title}</h2>
+    <p>{translatedName && movie.title}</p>
+    <p> <span class="runtime">{movie.runtime}</span> <span class="genre"> {movie.genre}</span></p>
+  </div>
+  </div>
+  <div class="indications">
+    {movie.awards.map(award => {
+      return award.id
+    })}
+  </div>
+</div>
+
+
+<style>
+.card {
+  padding: calc(var(--spacing) * 2) var(--block-spacing-horizontal);
+  border-radius: var(--border-radius);
+  background: var(--card-background-color);
+  box-shadow: var(--card-box-shadow);
+
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+  grid-template-columns: auto 1fr;
+  grid-template-areas: 
+    "poster info"
+    "poster indications";
+  align-items: flex-start;
+
+  gap: var(--block-spacing-horizontal); 
+}
+
+.poster {
+  grid-area: poster
+}
+
+.indications {
+  grid-area: indications
+}
+
+.info {
+  grid-area: info
+}
+</style>
