@@ -2,6 +2,7 @@
   "tt7740496": {
     "awards": [{ "id": "filme" }, { "id": "figurino" }, { "id": "design" }],
     "local_title": "Beco do Pesadelo",
+    "oscarYear": "2022",
     "title": "Nightmare Alley",
     "year": "2021",
     "runtime": "150 min",
@@ -20,6 +21,7 @@
       { "id": "roteiro-adaptado" }
     ],
     "local_title": "No Ritmo do Coração",
+    "oscarYear": "2022",
     "title": "CODA",
     "year": "2021",
     "runtime": "111 min",
@@ -34,6 +36,7 @@
   "tt10370710": {
     "awards": [{ "id": "roteiro-original" }, { "id": "estrangeiro" }],
     "local_title": "A Pior Pessoa do Mundo",
+    "oscarYear": "2022",
     "title": "The Worst Person in the World",
     "year": "2021",
     "runtime": "128 min",
@@ -55,6 +58,7 @@
       { "id": "montagem" }
     ],
     "local_title": "King Richard: Criando Campeãs",
+    "oscarYear": "2022",
     "title": "King Richard",
     "year": "2021",
     "runtime": "144 min",
@@ -73,6 +77,7 @@
       { "id": "roteiro-original" }
     ],
     "local_title": "Licorice Pizza",
+    "oscarYear": "2022",
     "title": "Licorice Pizza",
     "year": "2021",
     "runtime": "133 min",
@@ -99,6 +104,7 @@
       { "id": "design" }
     ],
     "local_title": "Ataque dos Cães",
+    "oscarYear": "2022",
     "title": "The Power of the Dog",
     "year": "2021",
     "runtime": "126 min",
@@ -123,6 +129,7 @@
       { "id": "design" }
     ],
     "local_title": "Duna",
+    "oscarYear": "2022",
     "title": "Dune",
     "year": "2021",
     "runtime": "155 min",
@@ -142,6 +149,7 @@
       { "id": "montagem" }
     ],
     "local_title": "Não Olhe Para Cima",
+    "oscarYear": "2022",
     "title": "Don't Look Up",
     "year": "2021",
     "runtime": "138 min",
@@ -156,6 +164,7 @@
   "tt14825950": {
     "awards": [{ "id": "curta-animado" }],
     "local_title": "Bestia",
+    "oscarYear": "2022",
     "title": "Beast",
     "year": "2021",
     "runtime": "16 min",
@@ -173,6 +182,7 @@
       { "id": "maquiagem-e-penteado" }
     ],
     "local_title": "Os Olhos de Tammy Faye",
+    "oscarYear": "2022",
     "title": "The Eyes of Tammy Faye",
     "year": "2021",
     "runtime": "126 min",
@@ -191,6 +201,7 @@
       { "id": "ator-coadjuvante", "nominee": "J.K. Simmons" }
     ],
     "local_title": "Apresentando os Ricardos",
+    "oscarYear": "2022",
     "title": "Being the Ricardos",
     "year": "2021",
     "runtime": "131 min",
@@ -205,6 +216,7 @@
   "tt12801262": {
     "awards": [{ "id": "animacao" }],
     "local_title": "Luca",
+    "oscarYear": "2022",
     "title": "Luca",
     "year": "2021",
     "runtime": "95 min",
@@ -223,6 +235,7 @@
       { "id": "efeitos-especiais" }
     ],
     "local_title": "007: Sem Tempo Para Morrer",
+    "oscarYear": "2022",
     "title": "No Time to Die",
     "year": "2021",
     "runtime": "163 min",
@@ -241,6 +254,7 @@
       { "id": "roteiro-adaptado" }
     ],
     "local_title": "A Filha Perdida",
+    "oscarYear": "2022",
     "title": "The Lost Daughter",
     "year": "2021",
     "runtime": "121 min",
@@ -262,6 +276,7 @@
       { "id": "design" }
     ],
     "local_title": "Amor, Sublime Amor",
+    "oscarYear": "2022",
     "title": "West Side Story",
     "year": "2021",
     "runtime": "156 min",
@@ -276,6 +291,7 @@
   "tt5109280": {
     "awards": [{ "id": "animacao" }],
     "local_title": "Raya e o Último Dragão",
+    "oscarYear": "2022",
     "title": "Raya and the Last Dragon",
     "year": "2021",
     "runtime": "107 min",
@@ -290,6 +306,7 @@
   "tt7979580": {
     "awards": [{ "id": "animacao" }],
     "local_title": "A Família Mitchell e a Revolta das Máquinas",
+    "oscarYear": "2022",
     "title": "The Mitchells vs the Machines",
     "year": "2021",
     "runtime": "114 min",
@@ -304,6 +321,7 @@
   "tt12536294": {
     "awards": [{ "id": "atriz", "nominee": "Kristen Stewart" }],
     "local_title": "Spencer",
+    "oscarYear": "2022",
     "title": "Spencer",
     "year": "2021",
     "runtime": "117 min",
@@ -318,6 +336,7 @@
   "tt12680684": {
     "awards": [{ "id": "estrangeiro" }],
     "local_title": "A Mão de Deus",
+    "oscarYear": "2022",
     "title": "The Hand of God",
     "year": "2021",
     "runtime": "130 min",
@@ -332,6 +351,7 @@
   "tt10344522": {
     "awards": [{ "id": "cancao-original", "nominee": "Somehow You Do" }],
     "local_title": "Four Good Days",
+    "oscarYear": "2022",
     "title": "Four Good Days",
     "year": "2020",
     "runtime": "100 min",
@@ -350,6 +370,7 @@
       { "id": "documentario" }
     ],
     "local_title": "Flee",
+    "oscarYear": "2022",
     "title": "Flee",
     "year": "2021",
     "runtime": "89 min",
@@ -368,6 +389,7 @@
       { "id": "trilha-sonora" }
     ],
     "local_title": "Encanto",
+    "oscarYear": "2022",
     "title": "Encanto",
     "year": "2021",
     "runtime": "102 min",
@@ -382,6 +404,7 @@
   "tt10189300": {
     "awards": [{ "id": "estrangeiro" }],
     "local_title": "Lunana",
+    "oscarYear": "2022",
     "title": "Lunana: A Yak in the Classroom",
     "year": "2019",
     "runtime": "110 min",
@@ -404,6 +427,7 @@
       { "id": "som" }
     ],
     "local_title": "Belfast",
+    "oscarYear": "2022",
     "title": "Belfast",
     "year": "2021",
     "runtime": "98 min",
@@ -418,6 +442,7 @@
   "tt14293560": {
     "awards": [{ "id": "curta-animado" }],
     "local_title": "Affairs of the Art",
+    "oscarYear": "2022",
     "title": "Affairs of the Art",
     "year": "2021",
     "runtime": "16 min",
@@ -435,6 +460,7 @@
       { "id": "montagem" }
     ],
     "local_title": "Tick, Tick... Boom!",
+    "oscarYear": "2022",
     "title": "tick, tick... BOOM!",
     "year": "2021",
     "runtime": "120 min",
@@ -452,6 +478,7 @@
       { "id": "design" }
     ],
     "local_title": "A Tragédia de Macbeth",
+    "oscarYear": "2022",
     "title": "The Tragedy of Macbeth",
     "year": "2021",
     "runtime": "105 min",
@@ -466,6 +493,7 @@
   "tt10872600": {
     "awards": [{ "id": "efeitos-especiais" }],
     "local_title": "Homem-Aranha: Sem Volta Para Casa",
+    "oscarYear": "2022",
     "title": "Spider-Man: No Way Home",
     "year": "2021",
     "runtime": "148 min",
@@ -480,6 +508,7 @@
   "tt11332850": {
     "awards": [{ "id": "curta-animado" }],
     "local_title": "Robin Robin",
+    "oscarYear": "2022",
     "title": "Robin Robin",
     "year": "2021",
     "runtime": "32 min",
@@ -494,6 +523,7 @@
   "tt12299764": {
     "awards": [{ "id": "curta" }],
     "local_title": "The Dress",
+    "oscarYear": "2022",
     "title": "The Dress",
     "year": "2020",
     "runtime": "30 min",
@@ -513,6 +543,7 @@
       { "id": "estrangeiro" }
     ],
     "local_title": "Drive my Car",
+    "oscarYear": "2022",
     "title": "Drive My Car",
     "year": "2021",
     "runtime": "179 min",
@@ -530,6 +561,7 @@
       { "id": "trilha-sonora" }
     ],
     "local_title": "Mães Paralelas",
+    "oscarYear": "2022",
     "title": "Parallel Mothers",
     "year": "2021",
     "runtime": "123 min",
@@ -544,6 +576,7 @@
   "tt14505430": {
     "awards": [{ "id": "documentario" }],
     "local_title": "Ascension",
+    "oscarYear": "2022",
     "title": "Ascension",
     "year": "2021",
     "runtime": "97 min",
@@ -558,6 +591,7 @@
   "tt14825972": {
     "awards": [{ "id": "curta-animado" }],
     "local_title": "Boxbellet",
+    "oscarYear": "2022",
     "title": "Boxballet",
     "year": "2020",
     "runtime": "15 min",
@@ -572,6 +606,7 @@
   "tt11924384": {
     "awards": [{ "id": "curta" }],
     "local_title": "The Long Goodbye",
+    "oscarYear": "2022",
     "title": "The Long Goodbye",
     "year": "2020",
     "runtime": "13 min",
@@ -586,6 +621,7 @@
   "tt3228774": {
     "awards": [{ "id": "figurino" }, { "id": "maquiagem-e-penteado" }],
     "local_title": "Cruella",
+    "oscarYear": "2022",
     "title": "Cruella",
     "year": "2021",
     "runtime": "134 min",
@@ -600,6 +636,7 @@
   "tt6802400": {
     "awards": [{ "id": "maquiagem-e-penteado" }],
     "local_title": "Um Príncipe em Nova York 2",
+    "oscarYear": "2022",
     "title": "Coming 2 America",
     "year": "2021",
     "runtime": "110 min",
@@ -614,6 +651,7 @@
   "tt11383280": {
     "awards": [{ "id": "curta" }],
     "local_title": "Please Hold",
+    "oscarYear": "2022",
     "title": "Please Hold",
     "year": "2020",
     "runtime": "19 min",
@@ -628,6 +666,7 @@
   "tt6264654": {
     "awards": [{ "id": "efeitos-especiais" }],
     "local_title": "Free Guy: Assumindo o Controle",
+    "oscarYear": "2022",
     "title": "Free Guy",
     "year": "2021",
     "runtime": "115 min",
@@ -642,6 +681,7 @@
   "tt9376612": {
     "awards": [{ "id": "efeitos-especiais" }],
     "local_title": "Shang-Chi e a Lenda dos Dez Anéis",
+    "oscarYear": "2022",
     "title": "Shang-Chi and the Legend of the Ten Rings",
     "year": "2021",
     "runtime": "132 min",
@@ -656,6 +696,7 @@
   "tt11422728": {
     "awards": [{ "id": "documentario" }],
     "local_title": "Summer of Soul (...ou, Quando A Revolução Não Pode Ser Televisionada)",
+    "oscarYear": "2022",
     "title": "Summer of Soul (...Or, When the Revolution Could Not Be Televised)",
     "year": "2021",
     "runtime": "118 min",
@@ -670,6 +711,7 @@
   "tt12771540": {
     "awards": [{ "id": "documentario-curta" }],
     "local_title": "Audible",
+    "oscarYear": "2022",
     "title": "Audible",
     "year": "2021",
     "runtime": "39 min",
@@ -684,6 +726,7 @@
   "tt12482898": {
     "awards": [{ "id": "documentario" }],
     "local_title": "Attica",
+    "oscarYear": "2022",
     "title": "Attica",
     "year": "2021",
     "runtime": "116 min",
@@ -698,6 +741,7 @@
   "tt11214590": {
     "awards": [{ "id": "maquiagem-e-penteado" }],
     "local_title": "Casa Gucci",
+    "oscarYear": "2022",
     "title": "House of Gucci",
     "year": "2021",
     "runtime": "158 min",
@@ -712,6 +756,7 @@
   "tt13630174": {
     "awards": [{ "id": "documentario" }],
     "local_title": "Writing With Fire",
+    "oscarYear": "2022",
     "title": "Writing with Fire",
     "year": "2021",
     "runtime": "92 min",
@@ -726,6 +771,7 @@
   "tt14513236": {
     "awards": [{ "id": "documentario-curta" }],
     "local_title": "The Queen of Basketball",
+    "oscarYear": "2022",
     "title": "The Queen of Basketball",
     "year": "2021",
     "runtime": "22 min",
@@ -740,6 +786,7 @@
   "tt12889404": {
     "awards": [{ "id": "figurino" }],
     "local_title": "Cyrano",
+    "oscarYear": "2022",
     "title": "Cyrano",
     "year": "2021",
     "runtime": "123 min",
@@ -754,6 +801,7 @@
   "tt9464038": {
     "awards": [{ "id": "curta-animado" }],
     "local_title": "The Windshield Wiper",
+    "oscarYear": "2022",
     "title": "The Windshield Wiper",
     "year": "2021",
     "runtime": "15 min",
@@ -768,6 +816,7 @@
   "tt14608922": {
     "awards": [{ "id": "documentario-curta" }],
     "local_title": "Three Songs for Benazir",
+    "oscarYear": "2022",
     "title": "Three Songs for Benazir",
     "year": "2021",
     "runtime": "22 min",
@@ -782,6 +831,7 @@
   "tt13796488": {
     "awards": [{ "id": "documentario-curta" }],
     "local_title": "When We Were Bullies",
+    "oscarYear": "2022",
     "title": "When We Were Bullies",
     "year": "2021",
     "runtime": "36 min",
@@ -796,6 +846,7 @@
   "tt15339848": {
     "awards": [{ "id": "documentario-curta" }],
     "local_title": "Lead me Home",
+    "oscarYear": "2022",
     "title": "Lead Me Home",
     "year": "2021",
     "runtime": "39 min",
@@ -810,6 +861,7 @@
   "tt7914938": {
     "awards": [{ "id": "curta" }],
     "local_title": "A La Kachuu: Take and Run",
+    "oscarYear": "2022",
     "title": "Ala Kachuu - Take and Run",
     "year": "2020",
     "runtime": "38 min",
@@ -824,6 +876,7 @@
   "tt15289736": {
     "awards": [{ "id": "curta" }],
     "local_title": "On My Mind",
+    "oscarYear": "2022",
     "title": "On My Mind",
     "year": "2021",
     "runtime": "18 min",

@@ -1,18 +1,20 @@
 ---
-import movies from "@/data/movies.json"
 import Layout from "@/layouts/Layout.astro";
+import { getMovieList, getMovie } from "@/utils/getData";
 
 export async function getStaticPaths() {
-  return Object.entries(movies).map(([movie, data]) => {
-    return { params: {imdbID: movie}}
-  })
+  const movieList = getMovieList();
+  return movieList.map((movie) => {
+    return { params: { imdbID: movie.imdbID } };
+  });
 }
 
-const { imdbID } = Astro.params
-const movie = movies[imdbID]
+const { imdbID } = Astro.params;
+const movie = getMovie(imdbID);
 ---
 
-<div>{movie.title}</div>
-<img src={movie.poster}/>   
-<p> {movie.plot} </p>
-
+<Layout title={movie.title}>
+  <div>{movie.title}</div>
+  <img src={movie.poster} />
+  <p>{movie.plot}</p>
+</Layout>

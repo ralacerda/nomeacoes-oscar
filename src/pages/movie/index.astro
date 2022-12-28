@@ -1,14 +1,12 @@
 ---
-import movies from "@/data/movies.json"
 import Layout from "@/layouts/Layout.astro";
+import { getMovieList } from "@/utils/getData";
 
-const allMovies = Object.keys(movies)
+const movieList = getMovieList();
 ---
 
-<!-- {allMovies} -->
-
-{allMovies.map(movie => {
-  return (
-    <div>{movie}</div>
-  )
-})}
+<!-- {allMovies} -->{
+  movieList.map((movie) => {
+    return <div>{movie.title}</div>;
+  })
+}

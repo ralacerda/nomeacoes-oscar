@@ -1,0 +1,39 @@
+---
+import MovieCardAward from "@/components/MovieCardAward.astro";
+import Layout from "@/layouts/Layout.astro";
+import { getAwardList, getMovieList } from "@/utils/getData";
+
+export async function getStaticPaths() {
+  const awardList = getAwardList();
+  return awardList.map((award) => {
+    return { params: { awardID: award, awardYear: "2022" } };
+  });
+}
+
+const { awardID } = Astro.params;
+const movieList = getMovieList();
+const indicatedMovies = movieList
+  .map((movie) => movie)
+  .filter((movie) => {
+    return movie.awards.filter((award) => award.id == awardID).length > 0;
+  });
+---
+
+<Layout title={awardID}>
+  <div class="cards">
+    {
+      indicatedMovies
+        .sort(
+          (a, b) =>
+            Object.values(b.awards).length - Object.values(a.awards).length
+        )
+        .map((movie) => {
+          return (
+            <MovieCardAward imdbID={movie.imdbID} currentAward={awardID} />
+          );
+        })
+    }
+  </div>
+</Layout>
+
+<style></style>

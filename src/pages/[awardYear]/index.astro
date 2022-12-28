@@ -1,0 +1,25 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { getAwardList, getAwardName } from "@/utils/getData";
+
+export async function getStaticPaths() {
+  return [{ params: { awardYear: "2022" } }];
+}
+
+const { awardYear } = Astro.params;
+const awardList = getAwardList();
+---
+
+<Layout title="Categorias Oscar 2022">
+  <ul>
+    {
+      awardList.map((award) => {
+        return (
+          <li>
+            <a href={`/${awardYear}/${award}`}>{getAwardName(award)}</a>
+          </li>
+        );
+      })
+    }
+  </ul>
+</Layout>

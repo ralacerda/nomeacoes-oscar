@@ -1,15 +1,17 @@
 ---
 import { getAwardName, getMovie } from "@/utils/getData";
-import imdbLogo from "~/assets/IMDB_Logo.svg";
+import AwardList from "./AwardList.astro";
 
 export interface Props {
   imdbID: string;
+  currentAward: string;
 }
 
-const { imdbID } = Astro.props;
+const { imdbID, currentAward } = Astro.props;
 
 const movie = getMovie(imdbID);
-const translatedName =
+
+const hasTranslatedName =
   movie.title.toLowerCase() != movie.local_title.toLowerCase() ? true : false;
 ---
 
@@ -17,30 +19,27 @@ const translatedName =
   <img src={movie.poster} class="poster" />
   <div class="info">
     <div>
-      <h2><a href={`/movie/${movie.imdbID}`}>{movie.local_title}</a></h2>
-      <p>{translatedName && movie.title}</p>
+      <h2 class="title">
+        <a href={`/movie/${movie.imdbID}`}>{movie.local_title}</a>
+      </h2>
+      <p>{hasTranslatedName && movie.title}</p>
       <p>
         <span class="runtime">{movie.runtime}</span>
       </p>
     </div>
   </div>
-  <ul class="indications">
-    {
-      movie.awards.map((award) => {
-        return (
-          <li>
-            <a href={`/${movie.oscarYear}/${award.id}`}>
-              {getAwardName(award.id)}
-            </a>
-          </li>
-        );
-      })
-    }
-  </ul>
+  <div class="indications">
+    <p>Outras indicações:</p>
+    <AwardList
+      awardList={movie.awards.filter((award) => award.id != currentAward)}
+      oscarYear={movie.oscarYear}
+    />
+  </div>
 </div>
 
-<style>
+<style lang="scss">
   .card {
+    margin: calc(var(--spacing) * 2) 0;
     padding: calc(var(--spacing) * 2) var(--block-spacing-horizontal);
     border-radius: var(--border-radius);
     background: var(--card-background-color);
@@ -69,6 +68,15 @@ const translatedName =
     grid-area: info;
   }
 
+  .card,
+  .title {
+    --typography-spacing-vertical: 0.2rem;
+  }
+
   .runtime {
+    border-radius: 0.2rem;
+    padding: 0.1rem 0.2rem;
+    font-size: 0.6rem;
+    border: 1px solid currentColor;
   }
 </style>

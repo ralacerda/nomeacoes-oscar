@@ -2,14 +2,19 @@
 import BaseLayout from "./BaseLayout.astro";
 
 export interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
 ---
 
-<BaseLayout title={`Sequela Movies | ${title}`}>
-	<main>
-	<slot />
-	</main>
+<BaseLayout title={`Sequela Movie App | ${title}`}>
+  <nav class="container">
+    <strong>Sequela Movie App</strong>
+  </nav>
+  <main>
+    <slot />
+  </main>
 </BaseLayout>
+
+<style></style>
