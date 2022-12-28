@@ -18,5 +18,9 @@
     "firebase": "^9.15.0",
     "sass": "^1.57.1",
     "vue": "^3.2.30"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.1",
+    "prettier-plugin-astro": "^0.7.0"
   }
 }
