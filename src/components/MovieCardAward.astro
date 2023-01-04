@@ -1,6 +1,8 @@
 ---
-import { getAwardName, getMovieBySlug } from "@/utils/getData";
+import { getMovieBySlug } from "@/utils/getData";
 import AwardList from "./AwardList.astro";
+import CastList from "./CastList.astro";
+import ImdbLink from "./ImdbLink.astro";
 
 export interface Props {
   slug: string;
@@ -19,19 +21,32 @@ const otherAwards = movie.awards.filter(
 ---
 
 <div class="card">
-  <img src={movie.poster} class="poster" />
+  <div class="poster">
+    <ImdbLink id={movie.imdbID}>
+      <img src={movie.poster} />
+    </ImdbLink>
+  </div>
+
   <div class="info">
     <div>
       <h2 class="title">
-        <a href={`/movie/${slug}`}>{movie.localTitle}</a>
+        <ImdbLink id={movie.imdbID}>{movie.localTitle}</ImdbLink>
       </h2>
-      <p>{hasTranslatedName && movie.title}</p>
+      {hasTranslatedName && <p class="original-title"> {movie.title}</p>}
+      <p>
+        <CastList castArray={movie.directors} />
+      </p>
       <p class="tags">
         <span>{movie.runtimeMin} min</span>{
           movie.genres.map((genre) => <span>{genre}</span>)
         }
       </p>
     </div>
+  </div>
+  <div class="credits">
+    <p>
+      <CastList castArray={movie.actors} />
+    </p>
   </div>
   <div class="indications">
     {otherAwards.length && currentAward ? <p>Outras indicações:</p> : ""}
@@ -40,10 +55,9 @@ const otherAwards = movie.awards.filter(
 </div>
 
 <style lang="scss">
-  .imdb {
-    height: 1rem;
-    display: inline;
-    line-height: 0;
+  .original-title {
+    font-style: italic;
+    font-size: 0.8rem;
   }
 
   .card {
@@ -58,10 +72,19 @@ const otherAwards = movie.awards.filter(
     grid-template-columns: 1fr 3fr;
     grid-template-areas:
       "poster info"
+      "poster credits"
       "poster indications";
     align-items: flex-start;
 
     gap: var(--block-spacing-horizontal);
+  }
+
+  .credits {
+    grid-area: credits;
+
+    & > p {
+      // margin: calc(var(--spacing) * 0.5) 0;
+    }
   }
 
   .poster {
@@ -76,8 +99,11 @@ const otherAwards = movie.awards.filter(
     grid-area: info;
   }
 
-  .card,
   .title {
+    --typography-spacing-vertical: 0;
+  }
+
+  .card {
     --typography-spacing-vertical: 0.2rem;
   }
 

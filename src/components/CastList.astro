@@ -1,0 +1,17 @@
+---
+import ImdbLink from "./ImdbLink.astro";
+
+export interface Props {
+  castArray: { nameID: string; name: string }[];
+}
+
+const { castArray, type } = Astro.props;
+---
+
+{
+  castArray.map((castMember) => (
+    <ImdbLink id={castMember.nameID} type="name">
+      {castMember.name}
+    </ImdbLink>
+  ))
+}
