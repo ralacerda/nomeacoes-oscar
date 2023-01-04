@@ -10,7 +10,7 @@
   "estrangeiro": "Melhor Filme Estrangeiro",
   "animacao": "Melhor Filme de Animação",
   "figurino": "Melhor Figurino",
-  "som": "Melhor Som (Edição + Mixagem)",
+  "som": "Melhor Som",
   "trilha-sonora": "Melhor Trilha Sonora Original",
   "cancao-original": "Melhor Canção Original",
   "curta-animado": "Melhor Curta-Metragem Animado",
@@ -20,5 +20,6 @@
   "efeitos-especiais": "Melhores Efeitos Especiais",
   "design": "Melhor Design de Produção",
   "documentario": "Melhor Documentário",
-  "documentario-curta": "Melhor Documentário de Curta-Metragem"
+  "documentario-curta": "Melhor Documentário de Curta-Metragem",
+  "fotografia": "Melhor Fotografia"
 }
