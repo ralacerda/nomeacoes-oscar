@@ -9,12 +9,20 @@ const { title } = Astro.props;
 ---
 
 <BaseLayout title={`Sequela Movie App | ${title}`}>
-  <nav class="container">
-    <strong>Sequela Movie App</strong>
-  </nav>
   <main>
     <slot />
   </main>
 </BaseLayout>
 
-<style></style>
+<style>
+  .navbar {
+    align-items: center;
+    padding-block: var(--spacing);
+    padding-inline: var(--block-spacing-horizontal);
+  }
+
+  .brand {
+    font-size: 1.4rem;
+    padding: ;
+  }
+</style>
