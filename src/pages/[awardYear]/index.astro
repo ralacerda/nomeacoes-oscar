@@ -1,6 +1,12 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import { getAwardList, getAwardName } from "@/utils/getData";
+import {
+  getAwardList,
+  getAwardName,
+  getMovieBySlug,
+  getMovieList,
+} from "@/utils/getData";
+import MovieCardAward from "@/components/MovieCardAward.astro";
 
 export async function getStaticPaths() {
   return [{ params: { awardYear: "2022" } }];
@@ -8,10 +14,14 @@ export async function getStaticPaths() {
 
 const { awardYear } = Astro.params;
 const awardList = getAwardList();
+const movies = getMovieList().sort((a, b) => {
+  return getMovieBySlug(b).awards.length - getMovieBySlug(a).awards.length;
+});
 ---
 
 <Layout title="Categorias Oscar 2022">
-  <ul>
+  <h1>Oscar 2022</h1>
+  <ul class="award-list">
     {
       awardList.map((award) => {
         return (
@@ -22,4 +32,39 @@ const awardList = getAwardList();
       })
     }
   </ul>
+  <div class="cards">
+    {
+      movies.map((movie) => {
+        return <MovieCardAward slug={movie} currentAward="" />;
+      })
+    }
+  </div>
+  <nav aria-label="breadcrumb">
+    <ul>
+      <li><a href="/">Inicio</a></li>
+      <li><a href={`/${awardYear}`}>Oscar {awardYear}</a></li>
+    </ul>
+  </nav>
 </Layout>
+
+<style lang="scss">
+  .award-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    font-size: 0.8rem;
+    gap: 0.2rem 0.4rem;
+    justify-content: center;
+
+    & > li {
+      list-style-type: none;
+      border: 1px solid #1095c1;
+      border-radius: 0.2rem;
+      padding: 0.2rem 0.4rem;
+    }
+  }
+
+  h1 {
+    text-align: center;
+  }
+</style>

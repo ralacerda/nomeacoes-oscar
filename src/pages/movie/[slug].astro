@@ -1,16 +1,16 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import { getMovieList, getMovie } from "@/utils/getData";
+import { getMovieList, getMovieBySlug } from "@/utils/getData";
 
 export async function getStaticPaths() {
   const movieList = getMovieList();
   return movieList.map((movie) => {
-    return { params: { imdbID: movie.imdbID } };
+    return { params: { slug: movie } };
   });
 }
 
-const { imdbID } = Astro.params;
-const movie = getMovie(imdbID);
+const { slug } = Astro.params;
+const movie = getMovieBySlug(slug);
 ---
 
 <Layout title={movie.title}>

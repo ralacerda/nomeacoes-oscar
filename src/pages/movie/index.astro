@@ -1,12 +1,20 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import { getMovieList } from "@/utils/getData";
+import { getMovies, getMovieBySlug } from "@/utils/getData";
+import MovieCardAward from "@/components/MovieCardAward.astro";
 
-const movieList = getMovieList();
+const allMovies = Object.keys(getMovies());
 ---
 
-<!-- {allMovies} -->{
-  movieList.map((movie) => {
-    return <div>{movie.title}</div>;
-  })
-}
+<Layout title="Categorias Oscar 2022">
+  {
+    allMovies.sort().map((slug) => {
+      const movie = getMovieBySlug(slug);
+      return (
+        <>
+          <MovieCardAward slug={slug} currentAward="" />
+        </>
+      );
+    })
+  }
+</Layout>

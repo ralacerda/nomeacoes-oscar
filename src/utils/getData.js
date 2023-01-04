@@ -1,5 +1,5 @@
 import awards from "~/data/awards.json";
-import oscar2022 from "~/data/oscar2022";
+import oscar2022 from "~/data/resultOscar2022";
 
 export function getAwardName(award) {
   return awards[award];
@@ -9,10 +9,14 @@ export function getAwardList() {
   return Object.keys(awards);
 }
 
-export function getMovieList() {
-  return Object.values(oscar2022);
+export function getMovies() {
+  return oscar2022;
 }
 
-export function getMovie(id) {
-  return oscar2022[id];
+export function getMovieList() {
+  return Object.keys(oscar2022);
+}
+
+export function getMovieBySlug(slug) {
+  return oscar2022[slug];
 }

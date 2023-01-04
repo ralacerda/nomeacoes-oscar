@@ -3,8 +3,9 @@ import { getAwardName } from "@/utils/getData";
 
 export interface Props {
   awardList: {
-    id: string;
+    shortName: string;
     nominee?: string;
+    winner: boolean;
   }[];
   oscarYear: string;
 }
@@ -16,10 +17,11 @@ const { awardList, oscarYear } = Astro.props;
   {
     awardList.map((award) => {
       return (
-        <li>
-          <a href={`/${oscarYear}/${award.id}`}>
-            {getAwardName(award.id)}
-            {award.nominee && "| " + award.nominee}
+        <li class={award.winner && "winner"}>
+          <a href={`/${oscarYear}/${award.shortName}`}>
+            {award.winner && "🏆"}
+            {getAwardName(award.shortName) +
+              (award.nominee && ": " + award.nominee)}
           </a>
         </li>
       );
@@ -40,6 +42,14 @@ const { awardList, oscarYear } = Astro.props;
       border: 1px solid #1095c1;
       border-radius: 0.2rem;
       padding: 0.2rem 0.4rem;
+    }
+  }
+
+  .winner {
+    background-color: #1095c1;
+
+    & > a {
+      color: white;
     }
   }
 </style>

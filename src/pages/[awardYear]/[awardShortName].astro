@@ -1,0 +1,56 @@
+---
+import MovieCardAward from "@/components/MovieCardAward.astro";
+import Layout from "@/layouts/Layout.astro";
+import {
+  getAwardList,
+  getAwardName,
+  getMovieBySlug,
+  getMovieList,
+} from "@/utils/getData";
+
+export async function getStaticPaths() {
+  const awardList = getAwardList();
+  return awardList.map((award) => {
+    return { params: { awardShortName: award, awardYear: "2022" } };
+  });
+}
+
+const { awardShortName, awardYear } = Astro.params;
+const movieList = getMovieList();
+
+const indicatedMovies = movieList
+  .filter((slug) => {
+    return (
+      getMovieBySlug(slug).awards.filter(
+        (award) => award.shortName == awardShortName
+      ).length > 0
+    );
+  })
+  .sort((a, b) => {
+    return getMovieBySlug(a).localTitle > getMovieBySlug(b).localTitle ? 1 : -1;
+  });
+---
+
+<Layout title={awardShortName}>
+  <h1>{getAwardName(awardShortName)}</h1>
+  <div class="cards">
+    {
+      indicatedMovies.map((movie) => {
+        return <MovieCardAward slug={movie} currentAward={awardShortName} />;
+      })
+    }
+  </div>
+  <nav aria-label="breadcrumb">
+    <ul>
+      <li><a href="/">Inicio</a></li>
+      <li><a href={`/${awardYear}`}>Oscar {awardYear}</a></li>
+      <li>{getAwardName(awardShortName)}</li>
+    </ul>
+  </nav>
+</Layout>
+
+<style>
+  h1 {
+    text-align: center;
+  }
+</style>
