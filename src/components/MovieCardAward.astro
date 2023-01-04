@@ -3,6 +3,7 @@ import { getMovieBySlug } from "@/utils/getData";
 import AwardList from "./AwardList.astro";
 import CastList from "./CastList.astro";
 import ImdbLink from "./ImdbLink.astro";
+import type { Movie } from "@/types";
 
 export interface Props {
   slug: string;
@@ -11,7 +12,7 @@ export interface Props {
 
 const { slug, currentAward } = Astro.props;
 
-const movie = getMovieBySlug(slug);
+const movie: Movie = getMovieBySlug(slug);
 
 const hasTranslatedName =
   movie.title.toLowerCase() != movie.localTitle.toLowerCase() ? true : false;

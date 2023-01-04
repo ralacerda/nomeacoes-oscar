@@ -2,7 +2,7 @@
 import ImdbLink from "./ImdbLink.astro";
 
 export interface Props {
-  castArray: { nameID: string; name: string }[];
+  castArray: { name: string; nameID: string }[];
 }
 
 const { castArray, type } = Astro.props;
