@@ -428,97 +428,26 @@
     ],
     "directors": [{ "name": "Joachim Trier", "nameID": "nm1258686" }]
   },
-  "audible": {
+  "": {
     "oscarYear": 2022,
-    "title": "Audible",
-    "poster": "https://m.media-amazon.com/images/M/MV5BZmI0MzY5ZDgtN2U3OS00ZGMyLTkyNWEtMDZkYTU1MmI2YTJkXkEyXkFqcGdeQXVyMjg4MDM2MjI@._V1_SX300.jpg",
-    "plot": "Football player Amaree McKenstry-Hall and his Maryland School for the Deaf teammates attempt to defend their winning streak while coming to terms with the tragic loss of a close friend.",
-    "imdbID": "tt12771540",
-    "releasedDate": 1625108400000,
-    "runtimeMin": 39,
-    "genres": ["Documentário", "Curta", "Esporte"],
-    "awards": [
-      { "shortName": "documentario-curta", "nominee": "", "winner": false }
-    ],
-    "localTitle": "Audible",
-    "actors": [{ "name": "Amaree McKenstry-Hall", "nameID": "nm12467013" }],
-    "directors": [{ "name": "Matthew Ogens", "nameID": "nm0644654" }]
-  },
-  "onde-eu-moro": {
-    "oscarYear": 2022,
-    "title": "Lead Me Home",
-    "poster": "https://m.media-amazon.com/images/M/MV5BYzcxOTcyMzktZWMyMS00NmE2LTk0MDEtYjg4OGVmNmY5NTViXkEyXkFqcGdeQXVyMTAyMjQ3NzQ1._V1_SX300.jpg",
-    "plot": "Lead Me Home is a short film that follows several people living on the streets in West Coast cities. Conceived to be a cinematic study of contrasts, the film will be familiar and shocking; intimate and vast. By weaving individual ...",
-    "imdbID": "tt15339848",
-    "releasedDate": 1638241200000,
-    "runtimeMin": 39,
-    "genres": ["Curta", "Documentário"],
-    "awards": [
-      { "shortName": "documentario-curta", "nominee": "", "winner": false }
-    ],
-    "localTitle": "Onde Eu Moro",
-    "actors": [{ "name": "N/A", "nameID": "" }],
-    "directors": [
-      { "name": "Pedro Kos", "nameID": "nm1310430" },
-      { "name": "Jon Shenk", "nameID": "" }
-    ]
-  },
-  "please-hold": {
-    "oscarYear": 2022,
-    "title": "Please Hold",
-    "poster": "https://m.media-amazon.com/images/M/MV5BZGM1YzFkN2ItNzY2Zi00OTFmLTliZGMtMDdiMTNjODE2M2Y5XkEyXkFqcGdeQXVyODQ1MjQ0OTg@._V1_SX300.jpg",
-    "plot": "A young man's life is suddenly and inexplicably derailed, as he finds himself at the mercy of automated \"justice.\"",
-    "imdbID": "tt11383280",
-    "releasedDate": 1647486000000,
-    "runtimeMin": 19,
-    "genres": ["Curta", "Comédia", "Drama"],
-    "awards": [{ "shortName": "curta", "nominee": "", "winner": false }],
-    "localTitle": "Please Hold",
+    "title": "Attica",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzJjZDQ0YTktMGFmYS00ZjI1LTkwZDQtN2E2NDFmOWMxODk5XkEyXkFqcGdeQXVyOTA3MTMyOTk@._V1_SX300.jpg",
+    "plot": "This unnervingly vivid dive into the 1971 uprising from Emmy® winning director Stanley Nelson sheds new light on the enduring violence and racism of the prison system and highlights the urgent, ongoing need for reform 50 years later.",
+    "imdbID": "tt12482898",
+    "releasedDate": 1643252400000,
+    "runtimeMin": 116,
+    "genres": ["Documentário"],
+    "awards": [{ "shortName": "documentario", "nominee": "", "winner": false }],
+    "localTitle": "",
     "actors": [
-      { "name": "Erick Lopez", "nameID": "nm3850846" },
-      { "name": "Doreen Calderon", "nameID": "nm0129522" },
-      { "name": "Daniel Edward Mora", "nameID": "nm0602265" }
+      { "name": "Richard Nixon", "nameID": "nm14311551" },
+      { "name": "Nelson Rockefeller", "nameID": "nm0734224" },
+      { "name": "Jaime Valone", "nameID": "nm13111407" }
     ],
-    "directors": [{ "name": "K.D. Dávila", "nameID": "nm4944814" }]
-  },
-  "tres-cancoes-para-benazir": {
-    "oscarYear": 2022,
-    "title": "Three Songs for Benazir",
-    "poster": "https://m.media-amazon.com/images/M/MV5BYWEwMDQwYTItZGM3OC00MTdiLTg5NTQtYzA3M2I0NDJiMTk3XkEyXkFqcGdeQXVyNzkyODgxOTU@._V1_SX300.jpg",
-    "plot": "Even as Shaista's love for Benazir is palpable, the choices he must make to build a life with her have profound consequences.",
-    "imdbID": "tt14608922",
-    "releasedDate": 1642993200000,
-    "runtimeMin": 22,
-    "genres": ["Documentário", "Curta"],
-    "awards": [
-      { "shortName": "documentario-curta", "nominee": "", "winner": false }
-    ],
-    "localTitle": "Três Canções Para Benazir",
-    "actors": [{ "name": "N/A", "nameID": "" }],
     "directors": [
-      { "name": "Elizabeth Mirzaei", "nameID": "nm4641608" },
-      { "name": "Gulistan Mirzaei", "nameID": "nm7902132" }
+      { "name": "Traci Curry", "nameID": "nm3055381" },
+      { "name": "Stanley Nelson", "nameID": "nm0625747" }
     ]
-  },
-  "quando-eramos-bullies": {
-    "oscarYear": 2022,
-    "title": "When We Were Bullies",
-    "poster": "https://m.media-amazon.com/images/M/MV5BODNkZDJkMjgtZDE5ZC00YmI0LWJjNDUtY2ZmZTk3NDhhZjA0XkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg",
-    "plot": "A mind-boggling coincidence leads the filmmaker to track down his fifth grade class and fifth grade teacher to examine their memory of and complicity in a bullying incident 50 years ago.",
-    "imdbID": "tt13796488",
-    "releasedDate": 1648609200000,
-    "runtimeMin": 36,
-    "genres": ["Documentário", "Curta"],
-    "awards": [
-      { "shortName": "documentario-curta", "nominee": "", "winner": false }
-    ],
-    "localTitle": "Quando Éramos Bullies",
-    "actors": [
-      { "name": "Mark Athitakis", "nameID": "nm12246975" },
-      { "name": "Ruth Bromberg", "nameID": "nm13268459" },
-      { "name": "Wendy Newman", "nameID": "nm12246976" }
-    ],
-    "directors": [{ "name": "Jay Rosenblatt", "nameID": "nm0742401" }]
   },
   "summer-of-soul-ou-quando-a-rev": {
     "oscarYear": 2022,
@@ -831,47 +760,6 @@
       { "name": "Kelvin Harrison Jr.", "nameID": "nm5123156" }
     ],
     "directors": [{ "name": "Joe Wright", "nameID": "nm0942504" }]
-  },
-  "a-sabia-sabiazinha": {
-    "oscarYear": 2022,
-    "title": "Robin Robin",
-    "poster": "https://m.media-amazon.com/images/M/MV5BY2M5NzdjYTktMzMyOS00NGIwLTlmOGMtY2FkOTAwOGU2YTI1XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_SX300.jpg",
-    "plot": "In this stop-motion short film, a bird raised by mice begins to question where she belongs and sets off on a daring journey of self-discovery.",
-    "imdbID": "tt11332850",
-    "releasedDate": 1637722800000,
-    "runtimeMin": 32,
-    "genres": ["Animação", "Curta", "Aventura"],
-    "awards": [
-      { "shortName": "curta-animado", "nominee": "", "winner": false }
-    ],
-    "localTitle": "A Sabiá Sabiazinha",
-    "actors": [
-      { "name": "Bronte Carmichael", "nameID": "nm6432607" },
-      { "name": "Richard E. Grant", "nameID": "nm0001290" },
-      { "name": "Gillian Anderson", "nameID": "nm0000096" }
-    ],
-    "directors": [
-      { "name": "Daniel Ojari", "nameID": "nm4570900" },
-      { "name": "Michael Please", "nameID": "nm3170529" }
-    ]
-  },
-  "o-perigoso-adeus": {
-    "oscarYear": 2022,
-    "title": "The Long Goodbye",
-    "poster": "https://m.media-amazon.com/images/M/MV5BN2RkZDljODgtMzRjZS00NTg1LTkxNmQtMWE2YWVjZjdhZDg0XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg",
-    "plot": "Private investigator Philip Marlowe helps a friend out of a jam, but in doing so gets implicated in his wife's murder.",
-    "imdbID": "tt0070334",
-    "releasedDate": 100407600000,
-    "runtimeMin": 112,
-    "genres": ["Comédia", "Crime", "Drama"],
-    "awards": [{ "shortName": "curta", "nominee": "", "winner": true }],
-    "localTitle": "O Perigoso Adeus",
-    "actors": [
-      { "name": "Elliott Gould", "nameID": "nm0001285" },
-      { "name": "Nina van Pallandt", "nameID": "nm0887684" },
-      { "name": "Sterling Hayden", "nameID": "nm9125245" }
-    ],
-    "directors": [{ "name": "Robert Altman", "nameID": "nm0000265" }]
   },
   "free-guy-assumindo-o-controle": {
     "oscarYear": 2022,
