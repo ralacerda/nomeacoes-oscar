@@ -16,6 +16,10 @@ const movie: Movie = getMovieBySlug(slug);
 
 const hasTranslatedName =
   movie.title.toLowerCase() != movie.localTitle.toLowerCase() ? true : false;
+
+const awardInfo = movie.awards.filter(
+  (award) => award.shortName == currentAward
+);
 const otherAwards = movie.awards.filter(
   (award) => award.shortName != currentAward
 );
@@ -31,12 +35,27 @@ const otherAwards = movie.awards.filter(
   <div class="info">
     <div>
       <h2 class="title">
-        <ImdbLink id={movie.imdbID}>{movie.localTitle}</ImdbLink>
+        <ImdbLink id={movie.imdbID}
+          >{awardInfo[0]?.nominee || movie.localTitle}</ImdbLink
+        >
       </h2>
-      {hasTranslatedName && <p class="original-title"> {movie.title}</p>}
       <p>
-        <CastList castArray={movie.directors} />
+        {
+          (awardInfo[0]?.nominee && (
+            <span class="small-title">{movie.localTitle}</span>
+          )) ||
+            (hasTranslatedName && (
+              <span class="original-title">{movie.title}</span>
+            ))
+        }
       </p>
+      {
+        currentAward != "direcao" && (
+          <p>
+            <CastList castArray={movie.directors} />
+          </p>
+        )
+      }
       <p class="tags">
         <span>{movie.runtimeMin} min</span>{
           movie.genres.map((genre) => <span>{genre}</span>)
