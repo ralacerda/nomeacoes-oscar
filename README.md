@@ -1,49 +1,17 @@
-# Welcome to [Astro](https://astro.build)
+# Sequela Movie App (WIP)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/basics)
+[![Built with Astro](https://astro.badg.es/v1/built-with-astro.svg)](https://astro.build)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Introduction
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+This is a working in progress version of the Sequela Movie App.
+Current website: sequelamovies.web.app/
 
-## 🚀 Project Structure
+The goal of the app is to provide a summary of recent [Oscars](https://www.oscars.org/), including nominated movies, winner and their relevant information.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Tools
 
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Right now the front-end is developed using [Astro](astro.build/), with plains to implement a Database and Authentication using [Firebase](firebase.google.com/) and [Vue](https://vuejs.org/).
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                             |
-| :--------------------- | :------------------------------------------------- |
-| `npm install`          | Installs dependencies                              |
-| `npm run dev`          | Starts local dev server at `localhost:3000`        |
-| `npm run build`        | Build your production site to `./dist/`            |
-| `npm run preview`      | Preview your build locally, before deploying       |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
-| `npm run astro --help` | Get help using the Astro CLI                       |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+The data to build this website is collected using a [Node](https://nodejs.org/en/) script that crosses data from
+[The Open Movie Database API](https://www.omdbapi.com/) and the [IMDb](https://www.imdb.com/) dataset hosted locally on [MongoDB](https://www.mongodb.com/). The script might be published later.
