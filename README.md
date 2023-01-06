@@ -4,8 +4,7 @@
 
 ## Introduction
 
-This is a working in progress version of the Sequela Movie App.
-Current website: sequelamovies.web.app/
+This is the repository for the [Sequela Movie App](sequelamovies.web.app/).
 
 The goal of the app is to provide a summary of recent [Oscars](https://www.oscars.org/), including nominated movies, winner and their relevant information.
 
