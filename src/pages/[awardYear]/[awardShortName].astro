@@ -10,24 +10,31 @@ import {
 
 export async function getStaticPaths() {
   const awardList = getAwardList();
-  return awardList.map((award) => {
-    return { params: { awardShortName: award, awardYear: "2022" } };
-  });
+  return ["2021", "2022"]
+    .map((awardYear) => {
+      return awardList.map((award) => {
+        return { params: { awardShortName: award, awardYear } };
+      });
+    })
+    .flatMap((x) => x);
 }
 
 const { awardShortName, awardYear } = Astro.params;
-const movieList = getMovieList();
+const movieList = getMovieList(awardYear);
 
 const indicatedMovies = movieList
   .filter((slug) => {
     return (
-      getMovieBySlug(slug).awards.filter(
+      getMovieBySlug(slug, awardYear).awards.filter(
         (award) => award.shortName == awardShortName
       ).length > 0
     );
   })
   .sort((a, b) => {
-    return getMovieBySlug(a).localTitle > getMovieBySlug(b).localTitle ? 1 : -1;
+    return getMovieBySlug(a, awardYear).localTitle >
+      getMovieBySlug(b, awardYear).localTitle
+      ? 1
+      : -1;
   });
 ---
 
@@ -36,7 +43,13 @@ const indicatedMovies = movieList
   <div class="cards">
     {
       indicatedMovies.map((movie) => {
-        return <MovieCardAward slug={movie} currentAward={awardShortName} />;
+        return (
+          <MovieCardAward
+            slug={movie}
+            currentAward={awardShortName}
+            awardYear={awardYear}
+          />
+        );
       })
     }
   </div>

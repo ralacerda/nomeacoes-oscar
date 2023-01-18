@@ -9,18 +9,21 @@ import {
 import MovieCardAward from "@/components/MovieCardAward.astro";
 
 export async function getStaticPaths() {
-  return [{ params: { awardYear: "2022" } }];
+  return [{ params: { awardYear: "2022" } }, { params: { awardYear: "2021" } }];
 }
 
 const { awardYear } = Astro.params;
 const awardList = getAwardList();
-const movies = getMovieList().sort((a, b) => {
-  return getMovieBySlug(b).awards.length - getMovieBySlug(a).awards.length;
+const movies = getMovieList(awardYear).sort((a, b) => {
+  return (
+    getMovieBySlug(b, awardYear).awards.length -
+    getMovieBySlug(a, awardYear).awards.length
+  );
 });
 ---
 
 <Layout title="Categorias Oscar 2022">
-  <h1>Oscar 2022</h1>
+  <h1>Oscar {awardYear}</h1>
   <ul class="award-list">
     {
       awardList.map((award) => {
@@ -35,7 +38,9 @@ const movies = getMovieList().sort((a, b) => {
   <div class="cards">
     {
       movies.map((movie) => {
-        return <MovieCardAward slug={movie} currentAward="" />;
+        return (
+          <MovieCardAward slug={movie} currentAward="" awardYear={awardYear} />
+        );
       })
     }
   </div>

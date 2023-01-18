@@ -8,11 +8,12 @@ import type { Movie } from "@/types";
 export interface Props {
   slug: string;
   currentAward: string;
+  awardYear: string;
 }
 
-const { slug, currentAward } = Astro.props;
+const { slug, currentAward, awardYear } = Astro.props;
 
-const movie: Movie = getMovieBySlug(slug);
+const movie: Movie = getMovieBySlug(slug, awardYear);
 
 const hasTranslatedName =
   movie.title.toLowerCase() != movie.localTitle.toLowerCase() ? true : false;

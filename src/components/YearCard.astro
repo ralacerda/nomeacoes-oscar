@@ -1,0 +1,52 @@
+---
+import { getMovieBySlug, getMovieList } from "@/utils/getData";
+
+export interface Props {
+  awardYear: string;
+}
+
+const { awardYear } = Astro.props;
+const topMovies = getMovieList(awardYear)
+  .sort((a, b) => {
+    return (
+      getMovieBySlug(b, awardYear).awards.length -
+      getMovieBySlug(a, awardYear).awards.length
+    );
+  })
+  .slice(0, 4);
+---
+
+<a href={`/${awardYear}`} class="card">
+  <div class="background-grid">
+    {
+      topMovies.map((movie) => (
+        <img src={getMovieBySlug(movie, awardYear).poster} />
+      ))
+    }
+  </div>
+  <h2>
+    Oscar {awardYear}
+  </h2>
+</a>
+
+<style lang="scss">
+  .card {
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-box-shadow);
+    overflow: hidden;
+    max-width: 300px;
+    background-color: var(--card-background-color);
+    padding: calc(var(--spacing) * 2) var(--block-spacing-horizontal);
+  }
+
+  .background-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h2 {
+    text-align: center;
+    padding-top: 1.2rem;
+    margin-block: 0;
+  }
+</style>
