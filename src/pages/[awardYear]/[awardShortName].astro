@@ -10,7 +10,7 @@ import {
 
 export async function getStaticPaths() {
   const awardList = getAwardList();
-  return ["2021", "2022"]
+  return ["2021", "2022", "2023"]
     .map((awardYear) => {
       return awardList.map((award) => {
         return { params: { awardShortName: award, awardYear } };
