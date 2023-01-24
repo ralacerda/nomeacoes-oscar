@@ -4,7 +4,7 @@ import YearCard from "@/components/YearCard.astro";
 ---
 
 <Layout title="Início">
-  <h1>Sequela Movie App</h1>
+  <h1>Nomeações Oscar</h1>
   <div class="card-grid">
     {["2021", "2022"].map((year) => <YearCard awardYear={year} />)}
   </div>
@@ -15,5 +15,10 @@ import YearCard from "@/components/YearCard.astro";
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: var(--block-spacing-horizontal);
+    justify-items: center;
+  }
+
+  h1 {
+    text-align: center;
   }
 </style>
