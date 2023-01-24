@@ -40,6 +40,13 @@ const indicatedMovies = movieList
 
 <Layout title={getAwardName(awardShortName)}>
   <h1>{getAwardName(awardShortName)}</h1>
+  <nav aria-label="breadcrumb">
+    <ul>
+      <li><a href="/">Inicio</a></li>
+      <li><a href={`/${awardYear}`}>Oscar {awardYear}</a></li>
+      <li>{getAwardName(awardShortName)}</li>
+    </ul>
+  </nav>
   <div class="cards">
     {
       indicatedMovies.map((movie) => {
@@ -53,13 +60,6 @@ const indicatedMovies = movieList
       })
     }
   </div>
-  <nav aria-label="breadcrumb">
-    <ul>
-      <li><a href="/">Inicio</a></li>
-      <li><a href={`/${awardYear}`}>Oscar {awardYear}</a></li>
-      <li>{getAwardName(awardShortName)}</li>
-    </ul>
-  </nav>
 </Layout>
 
 <style>

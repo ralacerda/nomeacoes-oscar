@@ -24,6 +24,12 @@ const movies = getMovieList(awardYear).sort((a, b) => {
 
 <Layout title="Categorias Oscar 2022">
   <h1>Oscar {awardYear}</h1>
+  <nav aria-label="breadcrumb">
+    <ul>
+      <li><a href="/">Inicio</a></li>
+      <li><a href={`/${awardYear}`}>Oscar {awardYear}</a></li>
+    </ul>
+  </nav>
   <ul class="award-list">
     {
       awardList.map((award) => {
@@ -44,12 +50,6 @@ const movies = getMovieList(awardYear).sort((a, b) => {
       })
     }
   </div>
-  <nav aria-label="breadcrumb">
-    <ul>
-      <li><a href="/">Inicio</a></li>
-      <li><a href={`/${awardYear}`}>Oscar {awardYear}</a></li>
-    </ul>
-  </nav>
 </Layout>
 
 <style lang="scss">
