@@ -24,6 +24,14 @@ const awardInfo = movie.awards.filter(
 const otherAwards = movie.awards.filter(
   (award) => award.shortName != currentAward
 );
+
+const title = (function () {
+  if (awardInfo[0]?.nominee) {
+    return awardInfo.map((award) => award.nominee).join(", ");
+  } else {
+    return movie.localTitle;
+  }
+})();
 ---
 
 <div class="card">
@@ -36,14 +44,20 @@ const otherAwards = movie.awards.filter(
   <div class="info">
     <div>
       <h2 class="title">
-        <ImdbLink id={movie.imdbID}
-          >{awardInfo[0]?.nominee || movie.localTitle}</ImdbLink
-        >
+        {
+          awardInfo[0]?.nominee ? (
+            <span>{title}</span>
+          ) : (
+            <ImdbLink id={movie.imdbID}>{title}</ImdbLink>
+          )
+        }
       </h2>
       <p>
         {
           (awardInfo[0]?.nominee && (
-            <span class="small-title">{movie.localTitle}</span>
+            <span class="small-title">
+              <ImdbLink id={movie.imdbID}>{movie.localTitle}</ImdbLink>
+            </span>
           )) ||
             (hasTranslatedName && (
               <span class="original-title">{movie.title}</span>
