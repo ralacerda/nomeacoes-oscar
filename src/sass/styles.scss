@@ -4,3 +4,13 @@ $enable-semantic-container: true;
 
 // Import Pico
 @import "@picocss/pico/scss/pico";
+
+a:hover {
+  text-decoration: none;
+
+  @media (hover: hover) {
+    & {
+      text-decoration: underline;
+    }
+  }
+}
