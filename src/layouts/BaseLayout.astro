@@ -9,14 +9,47 @@ const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="pt" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+
+    <!-- Primary Meta Tags -->
+    <title>Sequela Movie App | Início</title>
+    <meta name="title" content={title} />
+    <meta
+      name="description"
+      content="Um site com os filmes indicados para a premiação do Oscar de 2021, 2022 e 2023. Veja os nomeados e vencedores de cada categoria."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sequelamovies.web.app/" />
+    <meta property="og:title" content={title} />
+    <meta
+      property="og:description"
+      content="Um site com os filmes indicados para a premiação do Oscar de 2021, 2022 e 2023. Veja os nomeados e vencedores de cada categoria."
+    />
+    <meta
+      property="og:image"
+      content="https://sequelamovies.web.app/preview.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://sequelamovies.web.app/" />
+    <meta property="twitter:title" content={title} />
+    <meta
+      property="twitter:description"
+      content="Um site com os filmes indicados para a premiação do Oscar de 2021, 2022 e 2023. Veja os nomeados e vencedores de cada categoria."
+    />
+    <meta
+      property="twitter:image"
+      content="https://sequelamovies.web.app/preview.png"
+    />
   </head>
   <body>
     <slot />
