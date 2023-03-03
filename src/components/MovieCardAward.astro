@@ -25,6 +25,10 @@ const otherAwards = movie.awards.filter(
   (award) => award.shortName != currentAward
 );
 
+const winnerResult = movie.awards.filter(
+  (movie) => movie.shortName == currentAward
+)[0]?.winner;
+
 const title = (function () {
   if (awardInfo[0]?.nominee) {
     return awardInfo.map((award) => award.nominee).join(", ");
@@ -46,9 +50,13 @@ const title = (function () {
       <h2 class="title">
         {
           awardInfo[0]?.nominee ? (
-            <span>{title}</span>
+            <span>
+              {title} {winnerResult && "🏆"}
+            </span>
           ) : (
-            <ImdbLink id={movie.imdbID}>{title}</ImdbLink>
+            <ImdbLink id={movie.imdbID}>
+              {title} {winnerResult && "🏆"}
+            </ImdbLink>
           )
         }
       </h2>
