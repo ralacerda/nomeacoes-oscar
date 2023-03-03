@@ -9,9 +9,13 @@ const { castArray } = Astro.props;
 ---
 
 {
-  castArray.map((castMember) => (
-    <ImdbLink id={castMember.nameID} type="name">
-      {castMember.name != "N/A" ? castMember.name : ""}
-    </ImdbLink>
-  ))
+  castArray.map((castMember) =>
+    castMember.name != "N/A" ? (
+      <ImdbLink id={castMember.nameID} type="name">
+        {castMember.name}
+      </ImdbLink>
+    ) : (
+      ""
+    )
+  )
 }
