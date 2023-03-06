@@ -20,7 +20,7 @@ const topMovies = getMovieList(awardYear)
   <div class="background-grid">
     {
       topMovies.map((movie) => (
-        <img src={getMovieBySlug(movie, awardYear).poster} />
+        <img src={getMovieBySlug(movie, awardYear).poster} alt="" />
       ))
     }
   </div>
