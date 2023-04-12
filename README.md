@@ -1,10 +1,10 @@
-# Sequela Movie App (WIP)
+# Nomeações Oscar (WIP)
 
 [![Built with Astro](https://astro.badg.es/v1/built-with-astro.svg)](https://astro.build)
 
 ## Introduction
 
-This is the repository for the [Sequela Movie App](https://sequelamovies.web.app/).
+This is the repository for the website [Nomeações Oscar](https://nomeacoes-oscar.netlify.app/).
 
 The goal of the app is to provide a summary of recent [Oscars](https://www.oscars.org/), including nominated movies, winner and their relevant information.
 
